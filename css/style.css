@@ -1,0 +1,249 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Rubik", sans-serif;
+  background-color: #080B11;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  color: #7D7D7D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media (min-width: 1025px) {
+  .container .imgE {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .container .imgE {
+    display: none;
+  }
+  .container .header {
+    align-items: center;
+    gap: 20px;
+  }
+  .container .header img {
+    margin-right: 0;
+    max-width: 120px;
+    max-height: 130px;
+  }
+  .container .header button {
+    margin-left: 0;
+  }
+  .container .textUp {
+    width: 90%;
+    text-align: center;
+  }
+  .container .relogioComCarteira {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+    margin: 60px 0px 60px 0px;
+  }
+  .container .SendEmail {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+  }
+  .container .SendEmail #email {
+    width: 90%;
+  }
+  .container .images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .container .imgCards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .container .imgPet img {
+    width: 90%;
+    height: auto;
+    margin-left: 30px;
+  }
+  .container .textUp {
+    font-size: 18px;
+  }
+  .container .h1 {
+    font-size: 15px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container .header a {
+    margin-left: -195px;
+    padding: 50px;
+  }
+  .container .header button {
+    margin-left: 0px;
+  }
+  .container header img {
+    margin-right: 0px;
+  }
+  .container .images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container .imgCards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .container .imgCards img {
+    max-width: 222px;
+    max-height: 300px;
+  }
+  .container .imgPet img {
+    max-width: 360px;
+    max-height: 450px;
+  }
+  .container .imgE {
+    background-size: cover;
+    background-position: center;
+    max-width: 60%;
+    max-height: 0px;
+  }
+}
+
+.header {
+  max-width: 100%;
+  width: 90%;
+  display: flex;
+  margin: 40px 0px 35px 0px;
+  gap: 100px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.header img {
+  margin-right: 180px;
+}
+
+.header button {
+  background-color: #FFB72D;
+  width: 156px;
+  height: 43px;
+  border-radius: 50px;
+  margin-left: 200px;
+  padding: 8px 16px;
+}
+
+.header a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+.textUp {
+  align-items: center;
+  height: 211px;
+  width: 450px;
+  color: #FFB72D;
+  font-size: 18px;
+  text-align: center;
+}
+
+.relogioComCarteira {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  width: 439px;
+  height: 24px;
+  gap: 50px;
+  margin: 20px;
+}
+
+.relogioComCarteira p {
+  display: flex;
+  align-items: center;
+}
+
+.SendEmail {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 100px;
+  margin-top: 50px;
+}
+
+.SendEmail #email {
+  background-color: #080B11;
+  height: 42px;
+  width: 290px;
+  border-radius: 50px;
+  color: white;
+  padding-left: 20px;
+}
+
+.SendEmail button {
+  justify-content: center;
+  background-color: #FFB72D;
+  width: 156px;
+  height: 43px;
+  border-radius: 50px;
+}
+
+.images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1024px;
+  width: 100%;
+  gap: 20px;
+}
+
+.imgPet img {
+  width: 550px;
+}
+
+.imgCards {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  gap: 30px;
+}
+
+.h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  color: #FFB72D;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: solid 0.1px;
+  width: 90%;
+}
+
+.mensagem {
+  display: none;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.5333333333);
+  color: #000000;
+  border-radius: 5px;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */

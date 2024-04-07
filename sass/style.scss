@@ -1,0 +1,142 @@
+@use 'variables';
+@use 'mixins' as mx;
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "Rubik", sans-serif;
+    background-color: variables.$color-bg;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    color: variables.$color-border;
+    @include mx.flexCollumn();
+    @include mx.breakpoints(desktop);
+    @include mx.breakpoints(celular);
+    @include mx.breakpoints(tablet);
+
+}
+
+
+.header {
+    max-width: 100%;
+    width: 90%;
+    display: flex;
+    margin: 40px 0px 35px 0px;
+    gap: 100px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.header img{
+    margin-right: 180px;
+}
+
+.header button{
+    background-color: variables.$color-yellow ;
+    width: 156px;
+    height: 43px;
+    border-radius: 50px;
+    margin-left: 200px;
+    padding: 8px 16px;
+}
+
+.header a{
+    @include mx.flex();
+    text-decoration:none;
+    color: white;
+    
+}
+
+.textUp  {
+    align-items: center;
+    height: 211px;
+    width: 450px;
+    color: variables.$color-yellow;
+    font-size: 18px;
+    text-align: center;
+}
+
+.relogioComCarteira {
+    display: flex; 
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    width: 439px;
+    height: 24px;
+    gap: 50px;
+    margin: 20px;
+}
+
+.relogioComCarteira p {
+    display: flex;
+    align-items: center;
+}
+
+.SendEmail{
+    width: 100%;
+    @include mx.flex();
+    gap: 50px;
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+.SendEmail #email{
+    background-color:variables.$color-bg ;
+    height: 42px;
+    width: 290px;
+    border-radius: 50px;
+    color: white;
+    padding-left: 20px;   
+}
+
+.SendEmail button{
+    justify-content: center;
+    background-color: variables.$color-yellow ;
+    width: 156px;
+    height: 43px;
+    border-radius: 50px;
+}
+
+.images{
+    @include mx.flex();
+    max-width: 1024px;
+    width: 100%;
+    gap: 20px;
+}
+
+.imgPet img{
+    width: 550px;
+}
+
+.imgCards {
+    display: grid;
+    grid-template-columns: auto auto; 
+    grid-template-rows: auto auto;
+    gap: 30px;
+}
+.h1 {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    font-size: 25px;
+    color: variables.$color-yellow;
+}
+
+.footer {
+    @include mx.flex();
+    border-top: solid 0.1px;
+    width: 90%;
+}
+
+
+.mensagem {
+    display: none;
+    padding: 10px;
+    background-color: #ffffff88; 
+    color: #000000; 
+    border-radius: 5px;
+    text-align: center;
+}
